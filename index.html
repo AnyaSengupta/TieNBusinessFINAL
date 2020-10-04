@@ -1,0 +1,189 @@
+<!--css for the home page was edited from CrossWalk-->
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+    <!--<script> is borrowed but edited from https://www.w3schools.com/howto/howto_css_login_form.asp-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        var modal2 = document.getElementById('id02');
+        var modal2 = document.getElementById('id03');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+        window.onclick = function(event) {
+            if (event.target == modal3) {
+                modal2.style.display = "none";
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header" class="container">
+            <div id="logo">
+                <h1> <img style="width: 5%; height: 5%;" src="images/logo.png"><a>Tie N Business</a></h1>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li class="current_page_item"><a href="index.html" accesskey="1" title="">Home</a></li>
+                    <li><a onclick="document.getElementById('id03').style.display='block'" accesskey="2" title="">Notifications</a></li>
+
+                    <div id="id03" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                                <div style="text-align: left;" class="container">
+                                    <p><img style="height: 50px; width: 50px;" src="images/not1.png"> Michael Roberson (Software Engineer at Amazon), a web developer, wants to work on a website with you</p>
+                                    <hr>
+                                    <p><img style="height: 50px; width: 50px;" src="images/not2.jpg">Katie Nguyen sent you a message, "When do you want to video chat?Thursday and Friday works for me!"</p>
+                                    <hr>
+                                    <p><img style="height: 50px; width: 50px;" src="images/not3.jpg">Sameeha Siraj sent "That is Great News! Hopefully, it will open again"</p>
+                                    <hr>
+                                    <button href="#" class="cancelbtn">Clear</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <li><a href="browse.html" accesskey="3" title="">Browse</a></li>
+                    <li><a href="profile.html" accesskey="4" title="">Profile</a></li>
+                    <li><a onclick="document.getElementById('id01').style.display='block'" accesskey="5" title="">Login</a></li>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" href="profile.html" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            </div>
+                            <!--code is borrowed from https://www.w3schools.com/howto/howto_css_login_form.asp-->
+                            <div class="container">
+                                <label for="uname"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button href="profile.html" type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color:#f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div id="banner">&nbsp;</div>
+        <div id="featured">
+            <div class="container">
+                <div class="title">
+                    <h2>Small Business?</h2>
+                    <span class="byline">Are you apart of a small business or local organziation that has been hit hard by COVID-19?</span>
+                </div>
+                <p>COVID-19 has hit many everyone hard but especially our local businesses. With no customers, many businesses have completely shut down or are forced to go online. They force to go digital but don't have the resources to do so. This website connects local businesses with local volunteers to help with them with their needs (build a website, entrepreneurial advice, etc.) </p>
+            </div>
+            <ul class="actions">
+                <li><a onclick="document.getElementById('id02').style.display='block'" class="button">Sign Up Today!</a></li>
+            </ul>
+            <!--code below is borred from https://www.w3schools.com/howto/howto_css_login_form.asp-->
+            <div id="id02" class="modal">
+
+                <form class="modal-content animate" action="profile.html" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+                        <div style="color: dimgray; text-align: left" class="container">
+                            <label for="uname2"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="uname2" required>
+
+                            <label for="psw2"><b>Business Name</b></label>
+                            <input type="text" placeholder="Enter Business Name" name="psw2" required>
+
+                            <label for="psw3"><b>City</b></label>
+                            <input type="text" placeholder="Enter City" name="psw3" required>
+
+                            <label for="psw4"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw4" required>
+
+                            <label for="psw5"><b>Confirm Password</b></label>
+                            <input type="password" placeholder="Confirm Password" name="psw5" required>
+
+                            <button type="submit">Sign Up</button>
+                        </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="extra" class="container">
+        <div class="title">
+            <h2>Reach out to</h2>
+            <span class="byline">Here are some volunteers and how they can help you!</span>
+        </div>
+        <div id="three-column">
+            <div class="boxA">
+                <div class="box"> <img style=" border-radius: 5%;" src="images/WebDeveloper.jpg">
+
+                    <h2><br><strong>WEB DEVELOPER</strong></h2>
+                    <br>
+                    <p>They can help with your website and can customize to your wishes.</p>
+                </div>
+            </div>
+            <div class="boxB">
+                <div class="box"> <img style=" border-radius: 5%;" src="images/BusinessWoman.jpg">
+
+                    <h2><br><br><strong>ENTREPRENEUR</strong></h2>
+                    <br>
+                    <p>They can help and advise you on how to expand your business during COVID-19. <br></p>
+                </div>
+            </div>
+            <div class="boxC">
+                <div class="box"> <img style=" border-radius: 5%;" src="images/FinancialAdvisor.png">
+
+                    <h2><br><strong>FINANCIAL ADVISOR</strong></h2>
+                    <br>
+                    <p>They can help manage your funds and advise you on your spendings for your business.</p>
+                </div>
+            </div>
+        </div>
+        <ul class="actions">
+            <li><a href="browse.html" class="button">Find More!</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="container">
+        <img style="height: 100px; width: 100px; margin-left: 45%;" src="images/logo.png">
+        <div id="copyright">
+            <p>Contact Us at TNBcustomerhelp@gmail.com</p>
+        </div>
+    </div>
+</body>
+
+</html>
